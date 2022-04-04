@@ -1,9 +1,0 @@
-query {
-    recentPosts(count:10,offset:0){
-        title
-        author{
-            id
-            email
-        }
-    }
-}

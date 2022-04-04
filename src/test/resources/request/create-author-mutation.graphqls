@@ -1,6 +1,0 @@
-mutation {
-    createAuthor(author:{
-        name: "test"
-        email: "test@gmail.com"
-    })
-}

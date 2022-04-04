@@ -8,3 +8,59 @@ type Query {
     comments(count: Int!, offset: Int!): [Comment]!
     customer(phoneNumber: PhoneNumber!, email: Email!): Customer!
 }
+
+type Message {
+    id: ID!
+    text: String!
+}
+
+type Author {
+    id: ID!
+    name: String!
+    email: String!
+    posts: [Post]!
+    #    postCount: Int!
+    #    comments(first: Int!): [Comment]!
+}
+
+input AuthorInput {
+    name: String!
+    email: String!
+}
+
+type Post {
+    id: ID!
+    title: String!
+    description: String!
+    category: String!
+    author: Author!
+#    comments(first: Int!): [Comment]!
+}
+
+input PostInput {
+    title: String!
+    description: String!
+    category: String!
+    authorId: ID!
+}
+
+
+type Comment {
+    id: ID!
+    text: String!
+    post: Post!
+    author: Author!
+}
+
+input CommentInput {
+    text: String!
+    postId: ID!
+    authorId: ID!
+}
+
+type Customer {
+    birthDay: Date!
+    workStartTime: Time!
+    bornAt: DateTime!
+    profileLink: SocialMediaLink
+}

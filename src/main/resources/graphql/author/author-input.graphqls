@@ -1,4 +1,0 @@
-input AuthorInput {
-    name: String!
-    email: String!
-}

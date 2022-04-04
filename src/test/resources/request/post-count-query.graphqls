@@ -1,6 +1,0 @@
-query {
-    authors{
-        id
-        postCount
-    }
-}
