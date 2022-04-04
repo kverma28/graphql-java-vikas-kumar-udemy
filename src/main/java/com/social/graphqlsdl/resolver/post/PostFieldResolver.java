@@ -46,7 +46,7 @@ public class PostFieldResolver implements GraphQLResolver<PostDto> {
             log.info("comment thread id : {}", Thread.currentThread().getId());
             log.info("comment request started for postId:{}", postDto.getId());
             List<CommentDto> firstFewCommentsByPostId = commentService.getFirstFewCommentsByPostId(postDto.getId(), first);
-            log.info("comment request started for postId:{}", postDto.getId());
+            log.info("comment request completed for postId:{}", postDto.getId());
             return firstFewCommentsByPostId;
         }, executorService);
     }
