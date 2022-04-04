@@ -19,8 +19,8 @@ type Author {
     name: String!
     email: String!
     posts: [Post]!
-    #    postCount: Int!
-    #    comments(first: Int!): [Comment]!
+    postCount: Int!
+    comments(first: Int!): [Comment]!
 }
 
 input AuthorInput {
@@ -34,7 +34,7 @@ type Post {
     description: String!
     category: String!
     author: Author!
-#    comments(first: Int!): [Comment]!
+    comments(first: Int!): [Comment]!
 }
 
 input PostInput {
