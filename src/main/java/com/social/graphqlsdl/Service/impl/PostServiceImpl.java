@@ -2,6 +2,7 @@ package com.social.graphqlsdl.Service.impl;
 
 import com.social.graphqlsdl.Service.PostService;
 import com.social.graphqlsdl.dto.AuthorDto;
+import com.social.graphqlsdl.dto.CommentDto;
 import com.social.graphqlsdl.dto.PostDto;
 import com.social.graphqlsdl.exception.ResourceNotFound;
 import com.social.graphqlsdl.model.Author;

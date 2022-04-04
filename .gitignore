@@ -1,31 +1,37 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
 ### IntelliJ IDEA ###
-/**/.idea
+.idea
 *.iws
 *.iml
 *.ipr
-/out/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-### Gradle ###
-.gradle
-/**/build/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-
-### Maven ###
-/**/target
-
-### Eclipse ###
-/**/.settings
-/**/*.project
-/**/*.classpath
-/.metadata
-
-### Others ###
-
-/RemoteSystemsTempFiles
-/**/.recommenders
-/**/.factorypath
-/**/.sonarlint
-
-# 	Note :  if you find some of the files/directory that should be ignored are not getting ignoerd then delete the project from IDE (Eclipse/IntelliJ),
-#			then delete those files/directory, and then reimport the project. It should ignore the files/directory that should be ignored.
-
+### VS Code ###
+.vscode/

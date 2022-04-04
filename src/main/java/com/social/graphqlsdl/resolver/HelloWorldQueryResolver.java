@@ -2,13 +2,8 @@ package com.social.graphqlsdl.resolver;
 
 import com.social.graphqlsdl.dto.CustomerDto;
 import com.social.graphqlsdl.dto.MessageDto;
-import com.social.graphqlsdl.dto.MessageDto;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;

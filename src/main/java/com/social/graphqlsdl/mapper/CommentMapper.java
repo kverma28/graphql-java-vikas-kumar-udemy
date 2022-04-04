@@ -6,6 +6,8 @@ import com.social.graphqlsdl.model.Comment;
 import com.social.graphqlsdl.model.Post;
 import org.springframework.stereotype.Component;
 
+import java.util.UUID;
+
 @Component
 public class CommentMapper {
 
